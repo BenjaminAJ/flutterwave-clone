@@ -1,0 +1,44 @@
+@import url("/font/Moderat/stylesheet.css");
+@import "./partial/_variable.scss";
+
+@font-face {
+    font-family: Millik;
+    src: url("/font/Millik/Millik.otf") format("opentype"), 
+    url("/font/Millik/Millik.ttf")  format("truetype"),
+    url("/font/Millik/MillikRegular.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Moderat", "Inter", sans-serif;
+    .container-fluid {
+        font-family: inherit;
+        background-image: url('/images/bg/login_bg.svg') !important;
+
+        .row {
+            font-family: inherit;
+            padding: 32px 30px !important;
+
+            .navbar,
+            .navbar>* {
+                font-family: inherit;
+                padding: 0 !important;
+            }
+        }
+    }
+    #register{
+        background-color: $register-account !important;
+    }
+    #register:hover{
+        background-color: $register-account-hover !important;
+    }
+    #register:focus{
+        outline: 1px solid #ff9b00 !important;
+        border-radius: 4px !important;
+    }
+}
