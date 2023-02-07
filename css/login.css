@@ -1,4 +1,5 @@
 @import url("/font/Moderat/stylesheet.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @font-face {
   font-family: Millik;
   src: url("/font/Millik/Millik.otf") format("opentype"), url("/font/Millik/Millik.ttf") format("truetype"), url("/font/Millik/MillikRegular.woff") format("woff");
@@ -6,16 +7,33 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
 
 body {
   font-family: "Moderat", "Inter", sans-serif;
+  color: #333333 !important;
+  font-size: 14px !important;
+  background-color: #fff !important;
+  background-image: url("/images/bg/login_bg.svg") !important;
+  font-weight: 400 !important;
+}
+body input {
+  font-family: "Moderat", "Inter", sans-serif !important;
+}
+body :focus {
+  outline: 1px solid #ff9b00 !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: transparent !important;
+}
+body label {
+  font-family: "Moderat", "Inter", sans-serif !important;
 }
 body .container-fluid {
   font-family: inherit;
-  background-image: url("/images/bg/login_bg.svg") !important;
 }
 body .container-fluid .row {
   font-family: inherit;
