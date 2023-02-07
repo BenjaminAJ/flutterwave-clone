@@ -54,6 +54,12 @@ body .container-fluid footer .footerItem a {
   font-family: inherit !important;
   color: inherit !important;
 }
+@media screen and (min-width: 480px) {
+  body .container-fluid .loginForm {
+    -webkit-animation: slide-left 0.6s ease 0s 1 normal forwards;
+            animation: slide-left 0.6s ease 0s 1 normal forwards;
+  }
+}
 body #register {
   background-color: #ff9b00 !important;
 }
@@ -63,4 +69,26 @@ body #register:hover {
 body #register:focus {
   outline: 1px solid #ff9b00 !important;
   border-radius: 4px !important;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
