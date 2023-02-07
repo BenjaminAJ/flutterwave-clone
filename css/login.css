@@ -44,6 +44,16 @@ body .container-fluid .row .navbar > * {
   font-family: inherit;
   padding: 0 !important;
 }
+body .container-fluid footer {
+  padding: 0 5px !important;
+}
+body .container-fluid footer .footerItem {
+  padding: 32px 30px !important;
+}
+body .container-fluid footer .footerItem a {
+  font-family: inherit !important;
+  color: inherit !important;
+}
 body #register {
   background-color: #ff9b00 !important;
 }
