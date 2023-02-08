@@ -31,7 +31,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow: auto !important;
 
-    .container {
+    .heroSection {
         padding: 65px 20px !important;
 
         .heroWrapper {
@@ -109,6 +109,7 @@ body {
     }
 
     .customerSection {
+        overflow-x: hidden;
         .imgWrapper {
             .rightImg {
                 @media (max-width: 46.875em) {
@@ -161,5 +162,25 @@ body {
             }
         }
 
+    }
+    .businessSection{
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        .businesses{
+            p{
+                color: #1D1D1D;
+                font-size: 1.375rem;
+                font-weight: 500;
+                line-height: 2rem;
+                margin-bottom: 1.25rem;
+            }
+            .business{
+                padding: 1.2rem 1.19rem;
+                img{
+                    height: 2.19rem;
+                    width: auto;
+                }
+            }
+        }
     }
 }
