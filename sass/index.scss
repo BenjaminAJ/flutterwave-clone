@@ -19,6 +19,10 @@
 
 }
 
+img {
+    object-fit: cover;
+}
+
 body {
     color: #000;
     font-family: "Moderat", sans-serif;
@@ -73,30 +77,90 @@ body {
             display: flex;
             justify-content: flex-start;
 
-            .heroCta{
-                .btn{
+            .heroCta {
+                .btn {
                     padding: 21px 24px !important;
                     border-radius: 1rem !important;
                     outline: none !important;
                 }
-                .btn:focus{
+
+                .btn:focus {
                     box-shadow: none
                 }
             }
 
             .heroCta:first-child {
                 margin-right: 2rem;
-                a{
+
+                a {
                     background-color: #0a0e27;
-                    color: #fff;    
+                    color: #fff;
                 }
             }
-            .heroCta:last-child{
-                a{
+
+            .heroCta:last-child {
+                a {
                     background-color: #eee;
                     color: #000;
                 }
             }
         }
+
+    }
+
+    .customerSection {
+        .imgWrapper {
+            overflow: hidden;
+            .rightImg {
+                @media (max-width: 46.875em) {
+                    .row {
+                        top: 0 !important;
+                    }
+                }
+
+                @media (min-width: 1060px) {
+                    .row {
+                        top: -200px;
+                    }
+                }
+
+                .row {
+                    
+                    @media (min-width: 1060px) {
+                        p {
+                           margin-top: 74px ;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        p {
+                            max-width: 45rem;
+                            
+                        }
+                    }
+                    p{
+                        color: #1D1D1D;
+                        font-size: 20px;
+                        line-height: 32px;
+                        font-weight: 300;
+                        max-width: 25rem;
+                    }
+    
+                    .imgContainer {
+                        height: 42rem !important;
+
+                        img {
+                            height: 100% !important;
+                        }
+                    }
+                }
+            }
+
+            .leftImg {
+                img {
+                    height: 42rem !important;
+                }
+            }
+        }
+
     }
 }

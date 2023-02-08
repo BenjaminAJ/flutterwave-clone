@@ -199,6 +199,11 @@ body .container-fluid .dropdown:hover .dropdown-content .dropdownItem {
   font-size: inherit;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   color: #000;
   font-family: "Moderat", sans-serif;
@@ -281,4 +286,43 @@ body .container .heroCtas .heroCta:first-child a {
 body .container .heroCtas .heroCta:last-child a {
   background-color: #eee;
   color: #000;
+}
+body .customerSection .imgWrapper {
+  overflow: hidden;
+}
+@media (max-width: 46.875em) {
+  body .customerSection .imgWrapper .rightImg .row {
+    top: 0 !important;
+  }
+}
+@media (min-width: 1060px) {
+  body .customerSection .imgWrapper .rightImg .row {
+    top: -200px;
+  }
+}
+@media (min-width: 1060px) {
+  body .customerSection .imgWrapper .rightImg .row p {
+    margin-top: 74px;
+  }
+}
+@media (max-width: 768px) {
+  body .customerSection .imgWrapper .rightImg .row p {
+    max-width: 45rem;
+  }
+}
+body .customerSection .imgWrapper .rightImg .row p {
+  color: #1D1D1D;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  max-width: 25rem;
+}
+body .customerSection .imgWrapper .rightImg .row .imgContainer {
+  height: 42rem !important;
+}
+body .customerSection .imgWrapper .rightImg .row .imgContainer img {
+  height: 100% !important;
+}
+body .customerSection .imgWrapper .leftImg img {
+  height: 42rem !important;
 }
