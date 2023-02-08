@@ -287,9 +287,6 @@ body .container .heroCtas .heroCta:last-child a {
   background-color: #eee;
   color: #000;
 }
-body .customerSection .imgWrapper {
-  overflow: hidden;
-}
 @media (max-width: 46.875em) {
   body .customerSection .imgWrapper .rightImg .row {
     top: 0 !important;
