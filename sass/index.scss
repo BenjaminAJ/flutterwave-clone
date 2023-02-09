@@ -29,7 +29,6 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
     text-rendering: optimizeLegibility;
-    overflow: auto !important;
 
     .heroSection {
         padding: 65px 20px !important;
@@ -109,78 +108,143 @@ body {
     }
 
     .customerSection {
-        overflow-x: hidden;
+        padding-left: 0;
+        padding-right: 0;
+
         .imgWrapper {
-            .rightImg {
-                @media (max-width: 46.875em) {
-                    .row {
-                        top: 0 !important;
-                    }
-                }
-
-                @media (min-width: 1060px) {
-                    .row {
-                        top: -200px;
-                    }
-                }
-
-                .row {
-                    
-                    @media (min-width: 1060px) {
-                        p {
-                           margin-top: 74px ;
-                        }
-                    }
-                    @media (max-width: 768px) {
-                        p {
-                            max-width: 45rem;
-                            
-                        }
-                    }
-                    p{
-                        color: #1D1D1D;
-                        font-size: 20px;
-                        line-height: 32px;
-                        font-weight: 300;
-                        max-width: 25rem;
-                    }
-    
-                    .imgContainer {
-                        height: 42rem !important;
-
-                        img {
-                            height: 100% !important;
-                        }
-                    }
-                }
-            }
+            margin-right: 0;
 
             .leftImg {
                 img {
                     height: 42rem !important;
+                    width: auto;
+                    object-position: bottom right;
                 }
             }
         }
 
-    }
-    .businessSection{
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
-        .businesses{
-            p{
-                color: #1D1D1D;
-                font-size: 1.375rem;
-                font-weight: 500;
-                line-height: 2rem;
-                margin-bottom: 1.25rem;
+        .rightImg {
+            @media (max-width: 46.875em) {
+                .row {
+                    top: 0 !important;
+                }
             }
-            .business{
-                padding: 1.2rem 1.19rem;
-                img{
-                    height: 2.19rem;
-                    width: auto;
+
+            @media (min-width: 1060px) {
+                .row {
+                    top: -230px;
+
+                }
+            }
+
+            .row {
+
+                @media (min-width: 1060px) {
+                    p {
+                        margin-top: 74px;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    p {
+                        max-width: 45rem;
+
+                    }
+                }
+
+                p {
+                    color: #1D1D1D;
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 300;
+                    max-width: 25rem;
+                }
+
+                .imgContainer {
+                    height: 42rem !important;
+
+                    img {
+                        height: 100% !important;
+                    }
                 }
             }
         }
+
+        @media (min-width: 1060px) {
+            .rightImg {
+                padding-right: 0;
+                padding-left: 150px;  
+
+            }
+
+            .leftImg {
+                padding-right: 0;
+                margin-right: 0;
+            }
+        }
+
+
+    }
+
+}
+
+.businessSection {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+
+    .businesses {
+        p {
+            color: #1D1D1D;
+            font-size: 1.375rem;
+            font-weight: 500;
+            line-height: 2rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .business {
+            padding: 1.2rem 1.19rem;
+
+            img {
+                height: 2.19rem;
+                width: auto;
+            }
+        }
+    }
+}
+
+.paymentSection {
+    padding: 10.55rem 1.375rem; 
+    .container {
+        max-width: 75.075rem;
+
+        .p-tools {
+            font-family: Millik, sans-serif;
+            font-size: 5rem;
+            line-height: 86px;
+            letter-spacing: -.03em;
+            margin-bottom: 3.7rem;
+            font-weight: 500;
+            max-width: 40rem;
+
+            span {
+                color: #fb9129;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .p-tools {
+                font-size: 3.4375rem;
+                line-height: 3.85rem;
+            }
+        }
+
+
+        @media only screen and (max-width: 620px) {
+            .p-tools {
+                font-size: 2.475rem;
+                line-height: 3.025rem;
+            }
+        }
+
+
     }
 }
