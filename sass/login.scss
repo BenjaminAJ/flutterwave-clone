@@ -22,18 +22,22 @@ body {
   background-color: #fff !important;
   background-image: url("/images/bg/login_bg.svg") !important;
   font-weight: 400 !important;
+
   input {
     font-family: "Moderat", "Inter", sans-serif !important;
   }
+
   :focus {
     outline: 1px solid #ff9b00 !important;
     border-radius: 4px !important;
     box-shadow: none !important;
     border-color: transparent !important;
   }
+
   label {
     font-family: "Moderat", "Inter", sans-serif !important;
   }
+
   .container-fluid {
     font-family: inherit;
 
@@ -42,41 +46,51 @@ body {
       padding: 32px 30px !important;
 
       .navbar,
-      .navbar > * {
+      .navbar>* {
         font-family: inherit;
         padding: 0 !important;
       }
     }
+
     footer {
       padding: 0 5px !important;
+
       .footerItem {
         padding: 32px 30px !important;
+
         a {
           font-family: inherit !important;
           color: inherit !important;
         }
       }
-    }@media screen and (min-width: 480px){
-        .loginForm{
-            animation: slide-left 0.6s ease 0s 1 normal forwards;
-        }    
+    }
+
+    @media screen and (min-width: 480px) {
+      .loginForm {
+        animation: slide-left 0.6s ease 0s 1 normal forwards;
+      }
     }
   }
+
   #register {
     background-color: $register-account !important;
   }
+
   #register:hover {
     background-color: $register-account-hover !important;
   }
+
   #register:focus {
     outline: 1px solid #ff9b00 !important;
     border-radius: 4px !important;
   }
 }
+
 @keyframes slide-left {
   0% {
     transform: translateX(50%);
   }
+
   to {
     transform: translateX(0);
   }

@@ -2,3 +2,136 @@ $register-account: #ff9b00;
 $register-account-hover: #cc7c00;
 $navbar-hover: #00abab;
 $inlinegreen: #35a162;
+$font_Milik: Millik, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.c-pp {
+    color: #6672c7;
+}
+.c-or {
+    color: #fb9129;
+}
+.c-gr {
+    color: $inlinegreen;
+}
+img {
+    object-fit: cover;
+}
+.btn:focus {
+    box-shadow: none
+}
+.btn--secondary {
+    background-color: #fff;
+    color: #1d1d1d;
+}
+.btn--primary {
+    background-color: #0a0e27;
+    color: #fff;
+
+}
+
+.btn--sm {
+    font-size: 0.96rem;
+    line-height: 1.375rem;
+    padding: .6rem 1rem;
+    border-radius: .75rem !important;
+}
+
+.btn--lg {
+    padding: 1.75rem 2rem;
+    border-radius: .75rem !important;
+}
+
+@media only screen and (max-width: 46.875em) {
+    .btn--lg {
+        padding: 1.75rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .btn--lg {
+        padding: 1.51rem 1.92rem;
+    }
+}
+.btn--inline.orange,
+.btn--inline.orange:not([disabled]):hover {
+    color: #fb4e20;
+}
+
+.btn--inline {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    color: #000;
+    filter: none;
+    padding: 0.28rem 0.34rem;
+    align-items: center;
+    display: inline-flex !important;
+}
+
+.btn--inline svg {
+    --scale: 0.85;
+    transform: scale(var(--scale));
+    transition: .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.btn__icon {
+    fill: currentColor;
+    flex: 0 0 auto;
+    height: auto;
+    margin-left: 0.62rem;
+    margin-top: 0.275rem;
+    width: .6875rem;
+}
+
+.btn--inline:hover>svg {
+    transform: translateX(50%) scale(var(--scale));
+}
+
+.heroCtas {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    .heroCta {
+        .btn {
+            padding: 21px 24px !important;
+            border-radius: 1rem !important;
+            outline: none !important;
+        }
+        @media screen and (max-width: 480px){
+            .btn {
+                font-size: 3.7vw;
+                line-height: 4vw;
+                padding: 4.5vw 4.3vw !important;
+            }
+        }
+
+        .btn:focus {
+            box-shadow: none
+        }
+    }
+
+    .heroCta:first-child {
+        margin-right: 2rem;
+
+        a {
+            background-color: #0a0e27;
+            color: #fff;
+        }
+    }
+
+    .heroCta:last-child {
+        a {
+            background-color: #eee;
+            color: #000;
+        }
+    }
+}
+

@@ -1,14 +1,157 @@
 @import url("/font/Moderat/stylesheet.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@font-face {
-  font-family: Millik;
-  src: url("/font/Millik/Millik.otf") format("opentype"), url("/font/Millik/Millik.ttf") format("truetype"), url("/font/Millik/MillikRegular.woff") format("woff");
-}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c-pp {
+  color: #6672c7;
+}
+
+.c-or {
+  color: #fb9129;
+}
+
+.c-gr {
+  color: #35a162;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn--secondary {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.btn--primary {
+  background-color: #0a0e27;
+  color: #fff;
+}
+
+.btn--sm {
+  font-size: 0.96rem;
+  line-height: 1.375rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem !important;
+}
+
+.btn--lg {
+  padding: 1.75rem 2rem;
+  border-radius: 0.75rem !important;
+}
+
+@media only screen and (max-width: 46.875em) {
+  .btn--lg {
+    padding: 1.75rem 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .btn--lg {
+    padding: 1.51rem 1.92rem;
+  }
+}
+.btn--inline.orange,
+.btn--inline.orange:not([disabled]):hover {
+  color: #fb4e20;
+}
+
+.btn--inline {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  color: #000;
+  -webkit-filter: none;
+          filter: none;
+  padding: 0.28rem 0.34rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.btn--inline svg {
+  --scale: 0.85;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+  -webkit-transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn__icon {
+  fill: currentColor;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: auto;
+  margin-left: 0.62rem;
+  margin-top: 0.275rem;
+  width: 0.6875rem;
+}
+
+.btn--inline:hover > svg {
+  -webkit-transform: translateX(50%) scale(var(--scale));
+          transform: translateX(50%) scale(var(--scale));
+}
+
+.heroCtas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.heroCtas .heroCta .btn {
+  padding: 21px 24px !important;
+  border-radius: 1rem !important;
+  outline: none !important;
+}
+@media screen and (max-width: 480px) {
+  .heroCtas .heroCta .btn {
+    font-size: 3.7vw;
+    line-height: 4vw;
+    padding: 4.5vw 4.3vw !important;
+  }
+}
+.heroCtas .heroCta .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.heroCtas .heroCta:first-child {
+  margin-right: 2rem;
+}
+.heroCtas .heroCta:first-child a {
+  background-color: #0a0e27;
+  color: #fff;
+}
+.heroCtas .heroCta:last-child a {
+  background-color: #eee;
+  color: #000;
+}
+
+@font-face {
+  font-family: Millik;
+  src: url("/font/Millik/Millik.otf") format("opentype"), url("/font/Millik/Millik.ttf") format("truetype"), url("/font/Millik/MillikRegular.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -184,4 +327,100 @@ body .container-fluid .dropdown:hover .dropdown-content .dropdownItem {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body section {
+  background-color: #fff;
+}
+body .heroSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 65px 20px !important;
+}
+body .heroSection .heroWrapper {
+  margin: 0 auto;
+  max-width: 75rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .heroSection .heroWrapper .heroInfo {
+  max-width: 56rem;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+body .heroSection .heroWrapper .heroInfo > * {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 37.5em) {
+  body .heroSection .heroWrapper .heroInfo > * {
+    margin-left: unset;
+  }
+}
+body .heroSection .heroWrapper .heroInfo .hero__heading {
+  font-family: Millik, sans-serif;
+  font-size: 5.5rem;
+  line-height: 6rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  body .heroSection .heroWrapper .heroInfo .hero__heading {
+    font-size: 4.8rem !important;
+    line-height: 4.95rem !important;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body .heroSection .heroWrapper .heroInfo .hero__heading {
+    font-size: 3.43rem !important;
+    line-height: 3.57rem !important;
+    margin-bottom: 1.58rem;
+  }
+}
+body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
+  font-family: inherit;
+  color: #000000;
+  max-width: 45rem;
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 1.51rem;
+  margin-bottom: 1.89rem;
+}
+@media only screen and (max-width: 37.5em) {
+  body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
+    font-size: 1.23rem !important;
+    line-height: 1.92rem !important;
+    margin-bottom: 2.4rem;
+    max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body .heroSection .heroWrapper .heroInfo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body .heroSection .heroWrapper {
+    text-align: left;
+  }
 }
