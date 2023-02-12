@@ -146,6 +146,41 @@ img {
   color: #000;
 }
 
+.p {
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 2rem;
+  max-width: 38rem;
+}
+
+.headline {
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 1.3rem;
+  padding-left: 0.3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .headline {
+    font-size: 1.375rem;
+    line-height: 1.51rem;
+  }
+}
+.description {
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  margin-bottom: 2.06rem;
+  padding-left: 0.34rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .description {
+    font-size: 1.24rem;
+    line-height: 1.92rem;
+  }
+}
 @font-face {
   font-family: Millik;
   src: url("/font/Millik/Millik.otf") format("opentype"), url("/font/Millik/Millik.ttf") format("truetype"), url("/font/Millik/MillikRegular.woff") format("woff");
@@ -331,8 +366,20 @@ body .container-fluid .dropdown:hover .dropdown-content .dropdownItem {
 
 body section {
   background-color: #fff;
+  color: #1d1d1d;
+  padding: 65px 20px;
 }
-body .heroSection {
+@media only screen and (max-width: 46.875em) {
+  body .section {
+    padding: 6.8rem 1.37rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body .section {
+    padding: 4.8rem 1.37rem;
+  }
+}
+body #grow .heroSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,7 +389,7 @@ body .heroSection {
   text-align: center;
   padding: 65px 20px !important;
 }
-body .heroSection .heroWrapper {
+body #grow .heroSection .heroWrapper {
   margin: 0 auto;
   max-width: 75rem;
   -webkit-box-align: start;
@@ -357,14 +404,14 @@ body .heroSection .heroWrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body .heroSection .heroWrapper .heroInfo {
+body #grow .heroSection .heroWrapper .heroInfo {
   max-width: 56rem;
   width: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
-body .heroSection .heroWrapper .heroInfo > * {
+body #grow .heroSection .heroWrapper .heroInfo > * {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -372,11 +419,11 @@ body .heroSection .heroWrapper .heroInfo > * {
   margin-right: auto;
 }
 @media only screen and (max-width: 37.5em) {
-  body .heroSection .heroWrapper .heroInfo > * {
+  body #grow .heroSection .heroWrapper .heroInfo > * {
     margin-left: unset;
   }
 }
-body .heroSection .heroWrapper .heroInfo .hero__heading {
+body #grow .heroSection .heroWrapper .heroInfo .hero__heading {
   font-family: Millik, sans-serif;
   font-size: 5.5rem;
   line-height: 6rem;
@@ -385,19 +432,19 @@ body .heroSection .heroWrapper .heroInfo .hero__heading {
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 56.25em) {
-  body .heroSection .heroWrapper .heroInfo .hero__heading {
+  body #grow .heroSection .heroWrapper .heroInfo .hero__heading {
     font-size: 4.8rem !important;
     line-height: 4.95rem !important;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  body .heroSection .heroWrapper .heroInfo .hero__heading {
+  body #grow .heroSection .heroWrapper .heroInfo .hero__heading {
     font-size: 3.43rem !important;
     line-height: 3.57rem !important;
     margin-bottom: 1.58rem;
   }
 }
-body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
+body #grow .heroSection .heroWrapper .heroInfo .hero__sub-heading {
   font-family: inherit;
   color: #000000;
   max-width: 45rem;
@@ -407,7 +454,7 @@ body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
   margin-bottom: 1.89rem;
 }
 @media only screen and (max-width: 37.5em) {
-  body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
+  body #grow .heroSection .heroWrapper .heroInfo .hero__sub-heading {
     font-size: 1.23rem !important;
     line-height: 1.92rem !important;
     margin-bottom: 2.4rem;
@@ -415,12 +462,51 @@ body .heroSection .heroWrapper .heroInfo .hero__sub-heading {
   }
 }
 @media only screen and (max-width: 46.875em) {
-  body .heroSection .heroWrapper .heroInfo {
+  body #grow .heroSection .heroWrapper .heroInfo {
     width: 100%;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  body .heroSection .heroWrapper {
+  body #grow .heroSection .heroWrapper {
     text-align: left;
   }
+}
+body #grow .growIll {
+  padding: 65px 20px !important;
+}
+body #grow .growIll .container .imageWrapper {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 46.875em) {
+  body #grow .growIll {
+    padding: 6.8rem 1.37rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .growIll {
+    padding: 4.8rem 1.37rem;
+  }
+}
+body #grow .benefitSection .benefitWrapper .row .feature img {
+  border-radius: 100%;
+  width: 3.91rem;
+  height: 3.91rem;
+  margin-bottom: 1.78rem;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+body #grow .benefitSection .benefitWrapper .row .feature .headline {
+  color: #050505;
+  font-size: 1.23rem;
+  font-weight: 600;
+  line-height: 1.78rem;
+  margin-bottom: 0.89rem;
+}
+body #grow .benefitSection .benefitWrapper .row .feature .description {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  max-width: 18rem;
 }
