@@ -96,12 +96,17 @@ body {
             }
         }
         .growIll{
-            padding: 65px 20px !important;
             .container{
                 .imageWrapper{
                     height: 100%;
                     width: 100%;
                 }
+            }
+        }
+        @media (max-width: 760px) {
+            .growIll{
+                padding-bottom: 0 !important;
+
             }
         }
         @media only screen and (max-width: 46.875em){
@@ -141,6 +146,32 @@ body {
                         }
                     }
                 }
+            }
+        }
+        @media (max-width: 760px) {
+            .benefitSection{
+                padding-top: 0 !important;
+            }
+        }
+        .getStartedSection{
+            background-color: #f8fafd;
+            .getStartedWrapper{
+                // .h1{
+
+                // }
+                .p:first-child{
+                    max-width: 40rem;
+                }
+                .p:nth-child(3){
+                    max-width: 27rem;
+                } 
+                .goalList::before{
+                    content: "";
+                    border-radius: 50%;
+                    background-color: green;
+                    height: 10px;
+                    width: 10px ;
+                }              
             }
         }
     
