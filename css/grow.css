@@ -9,6 +9,14 @@
   font-size: inherit;
 }
 
+.link {
+  color: #00abab;
+  display: inline-block;
+  font-weight: 400;
+  padding: 0 0.2rem;
+  text-decoration: none;
+}
+
 .c-pp {
   color: #6672c7;
 }
@@ -635,4 +643,166 @@ body #grow .processSection {
 body #grow .processSection .container .wrapper {
   margin-bottom: 8rem;
   max-width: 50rem;
+}
+body #grow .processSection .container .wrapper .h1 {
+  max-width: inherit;
+}
+body #grow .processSection .container .wrapper .p {
+  max-width: inherit;
+}
+body #grow .processSection .container .steps {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+}
+body #grow .processSection .container .steps .step:not(:last-child) {
+  padding-bottom: 0;
+}
+body #grow .processSection .container .steps .step {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(25% - 3rem);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+body #grow .processSection .container .steps .step .stepCounter .stepCounterNum {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(81.57deg, rgba(0, 175, 175, 0.3) -2.42%, rgba(105, 255, 162, 0.3) 102.07%);
+  border-radius: 100%;
+  color: #35a162;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 1.8rem;
+  font-weight: 300;
+  height: 2.9rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 2.9rem;
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step .stepCounter .stepCounterNum {
+    font-size: 1rem;
+    height: 1.8rem;
+    line-height: 1rem;
+    width: 1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step .step__counter {
+    height: 5.4rem;
+    width: 3.1rem;
+  }
+}
+body #grow .processSection .container .steps .step .stepInfo {
+  padding-top: 1rem;
+}
+body #grow .processSection .container .steps .step .stepInfo .stepTitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+body #grow .processSection .container .steps .step .stepInfo .stepDesc {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+body #grow .processSection .container .steps .step .stepInfo .stepDesc a:hover {
+  color: rgb(10, 88, 202);
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step .stepInfo {
+    padding-top: 2.8rem;
+  }
+  body #grow .processSection .container .steps .step .stepInfo .stepTitle {
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  body #grow .processSection .container .steps .step .stepInfo .stepDesc {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+body #grow .processSection .container .steps .step:not(:last-child):before {
+  bottom: 0;
+  content: "";
+  border: none;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+  height: 0;
+  left: unset;
+  right: 0;
+  top: 1.7rem;
+  width: calc(100% - 5rem);
+  position: absolute;
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step:not(:last-child):before {
+    bottom: 0;
+    border: none;
+    border-left: 1px dashed rgba(0, 0, 0, 0.4);
+    height: calc(100% - 5.4rem);
+    left: 1rem;
+    padding-bottom: 10rem;
+    right: unset;
+    top: unset;
+    width: 0;
+  }
+}
+body #grow .processSection .container .steps .step:not(:last-child) {
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 56.25em) {
+  body #grow .processSection .container .steps .step {
+    margin-bottom: 3rem;
+    width: calc(50% - 3rem);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .processSection .container .steps .step:not(:last-child) {
+    padding-bottom: 5rem;
+  }
 }

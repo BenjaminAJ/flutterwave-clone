@@ -179,32 +179,32 @@ body {
             background-color: #f8fafd;
 
             .getStartedWrapper {
-                .row:first-child{
+                .row:first-child {
                     .col-12:first-child {
                         // .h1{
-    
+
                         // }
                         .p:first-child {
                             max-width: 40rem;
                         }
-    
+
                         .p:nth-child(3) {
                             max-width: 27rem;
                         }
-    
+
                         .goalLists {
                             // position: relative;
                             list-style-type: none;
-    
+
                             .p {
                                 max-width: 27rem;
                             }
-    
+
                             .goalList {
                                 position: relative;
                             }
                         }
-    
+
                         .goalLists li::before {
                             content: "";
                             border-radius: 50%;
@@ -215,10 +215,11 @@ body {
                             left: -1.5rem;
                             top: .9rem;
                         }
-    
+
                     }
-                    .col-12:nth-child(2){
-                        .demoForm{
+
+                    .col-12:nth-child(2) {
+                        .demoForm {
                             background-color: #fff;
                             background-image: url('../images/grow/bg/noise.png');
                             background-repeat: no-repeat;
@@ -226,70 +227,234 @@ body {
                             background-size: cover;
                             border-radius: 1rem;
                             color: #262c55;
-                            filter: drop-shadow(0 4px 30px rgba(0,0,0,.15));
+                            filter: drop-shadow(0 4px 30px rgba(0, 0, 0, .15));
                             margin-bottom: 2rem;
                             padding: 4.8rem 6.3rem 1rem;
                             height: 60%;
                             width: 100%;
-                            .formField{
-                                border-bottom: 1px dashed rgba(38,44,85,.7);
+
+                            .formField {
+                                border-bottom: 1px dashed rgba(38, 44, 85, .7);
                                 margin-bottom: 2rem;
-                                .fieldName{
+
+                                .fieldName {
                                     font-size: .89rem;
                                     font-weight: 500;
                                     line-height: 1.1rem;
                                     text-transform: uppercase;
                                     margin-bottom: .5rem;
                                 }
-                                .fieldContent{
+
+                                .fieldContent {
                                     font-size: .89rem;
                                     font-weight: 500;
                                     line-height: 1.1rem;
                                     text-transform: capitalize;
                                     margin-bottom: .5rem;
-                                    svg{
+
+                                    svg {
                                         vertical-align: middle;
                                     }
                                 }
                             }
                         }
-                        span{
+
+                        span {
                             color: #686868;
                             display: block;
                             font-size: .9rem;
                             font-weight: 500;
                             line-height: 1rem;
                             text-align: center;
-                            
+
                         }
                     }
-    
+
                 }
             }
-            .wrapper{
+
+            .wrapper {
                 max-width: 50.5rem;
                 margin-top: 5rem;
                 margin-left: 2rem;
-                .h1{
+
+                .h1 {
                     margin-bottom: 2rem;
                     max-width: inherit;
                 }
-                .p{
+
+                .p {
                     margin-bottom: 2rem;
                     max-width: inherit;
                 }
             }
-            .container.imgWrapper{
-                filter: drop-shadow(0 4px 30px rgba(0,0,0,.15));
+
+            .container.imgWrapper {
+                filter: drop-shadow(0 4px 30px rgba(0, 0, 0, .15));
                 margin-top: 2.2rem;
             }
         }
-        .processSection{
+
+        .processSection {
             padding-bottom: 6rem;
-            .container{
-                .wrapper{
+
+            .container {
+                .wrapper {
                     margin-bottom: 8rem;
                     max-width: 50rem;
+
+                    .h1 {
+                        max-width: inherit;
+                    }
+
+                    .p {
+                        max-width: inherit;
+                    }
+                }
+
+                .steps {
+                    align-items: flex-start;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 100%;
+                    list-style-type: none;
+
+                    .step:not(:last-child) {
+                        padding-bottom: 0;
+                    }
+
+                    .step {
+                        align-items: stretch;
+                        flex: 0 1 auto;
+                        flex-direction: column;
+                        width: calc(25% - 3rem);
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+
+                        .stepCounter {
+                            .stepCounterNum {
+                                align-items: center;
+                                background: linear-gradient(81.57deg, rgba(0, 175, 175, .3) -2.42%, rgba(105, 255, 162, .3) 102.07%);
+                                border-radius: 100%;
+                                color: #35a162;
+                                display: inline-flex;
+                                flex: 0 0 auto;
+                                font-size: 1.8rem;
+                                font-weight: 300;
+                                height: 2.9rem;
+                                justify-content: center;
+                                line-height: 1.8rem;
+                                text-align: center;
+                                width: 2.9rem;
+                            }
+
+                            @media only screen and (max-width: 37.5em) {
+                                .stepCounterNum {
+                                    font-size: 1rem;
+                                    height: 1.8rem;
+                                    line-height: 1rem;
+                                    width: 1.8rem;
+                                }
+                            }
+                        }
+
+                        @media only screen and (max-width: 37.5em) {
+                            .step__counter {
+                                height: 5.4rem;
+                                width: 3.1rem;
+                            }
+                        }
+
+                        .stepInfo {
+                            padding-top: 1rem;
+
+                            .stepTitle {
+                                font-size: 1.15rem;
+                                font-weight: 500;
+                                margin-bottom: 1rem;
+                                line-height: 2rem;
+                            }
+
+                            .stepDesc {
+                                font-size: 1rem;
+                                line-height: 2rem;
+                                font-weight: 300;
+                                a:hover {
+                                    color: rgb(10, 88, 202);
+                                }
+                            }
+                        }
+
+                        @media only screen and (max-width: 37.5em) {
+                            .stepInfo {
+                                padding-top: 2.8rem;
+
+                                .stepTitle {
+                                    font-size: 1.15rem;
+                                    line-height: 1.8rem;
+                                    margin-bottom: .8rem;
+                                }
+
+                                .stepDesc {
+                                    font-size: 1rem;
+                                    line-height: 1.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .step:not(:last-child):before {
+                        bottom: 0;
+                        content: "";
+                        border: none;
+                        border-top: 1px dashed rgba(0,0,0,.4);
+                        height: 0;
+                        left: unset;
+                        right: 0;
+                        top: 1.7rem;
+                        width: calc(100% - 5rem);
+                        position: absolute;
+                    }
+                    @media only screen and (max-width: 37.5em){
+                         .step:not(:last-child):before {
+                            bottom: 0;
+                            border: none;
+                            border-left: 1px dashed rgba(0,0,0,.4);
+                            height: calc(100% - 5.4rem);
+                            left: 1rem;
+                            padding-bottom: 10rem;
+                            right: unset;
+                            top: unset;
+                            width: 0;
+                        }
+                    }
+
+                    .step:not(:last-child) {
+                        padding-bottom: 0;
+                    }
+
+                    @media only screen and (max-width: 56.25em) {
+                        .step {
+                            margin-bottom: 3rem;
+                            width: calc(50% - 3rem);
+                        }
+                    }
+
+                    @media only screen and (max-width: 37.5em) {
+                        .step {
+                            align-items: flex-start;
+                            flex-direction: row;
+                            margin-bottom: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    @media only screen and (max-width: 37.5em) {
+                        .step:not(:last-child) {
+                            padding-bottom: 5rem;
+                        }
+                    }
                 }
             }
         }
