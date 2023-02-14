@@ -542,16 +542,97 @@ body #grow .benefitSection .benefitWrapper .row .feature .description {
 body #grow .getStartedSection {
   background-color: #f8fafd;
 }
-body #grow .getStartedSection .getStartedWrapper .p:first-child {
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .p:first-child {
   max-width: 40rem;
 }
-body #grow .getStartedSection .getStartedWrapper .p:nth-child(3) {
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .p:nth-child(3) {
   max-width: 27rem;
 }
-body #grow .getStartedSection .getStartedWrapper .goalList::before {
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .goalLists {
+  list-style-type: none;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .goalLists .p {
+  max-width: 27rem;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .goalLists .goalList {
+  position: relative;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:first-child .goalLists li::before {
   content: "";
   border-radius: 50%;
   background-color: green;
-  height: 10px;
-  width: 10px;
+  height: 0.5rem;
+  width: 1rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.9rem;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm {
+  background-color: #fff;
+  background-image: url("../images/grow/bg/noise.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 1rem;
+  color: #262c55;
+  -webkit-filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.15));
+  margin-bottom: 2rem;
+  padding: 4.8rem 6.3rem 1rem;
+  height: 60%;
+  width: 100%;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm .formField {
+  border-bottom: 1px dashed rgba(38, 44, 85, 0.7);
+  margin-bottom: 2rem;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm .formField .fieldName {
+  font-size: 0.89rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm .formField .fieldContent {
+  font-size: 0.89rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm .formField .fieldContent svg {
+  vertical-align: middle;
+}
+body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) span {
+  color: #686868;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: center;
+}
+body #grow .getStartedSection .wrapper {
+  max-width: 50.5rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+body #grow .getStartedSection .wrapper .h1 {
+  margin-bottom: 2rem;
+  max-width: inherit;
+}
+body #grow .getStartedSection .wrapper .p {
+  margin-bottom: 2rem;
+  max-width: inherit;
+}
+body #grow .getStartedSection .container.imgWrapper {
+  -webkit-filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.15));
+  margin-top: 2.2rem;
+}
+body #grow .processSection {
+  padding-bottom: 6rem;
+}
+body #grow .processSection .container .wrapper {
+  margin-bottom: 8rem;
+  max-width: 50rem;
 }

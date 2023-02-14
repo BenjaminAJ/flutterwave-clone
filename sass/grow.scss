@@ -1,28 +1,31 @@
 @import "./navbar.scss";
 
 body {
-    section{
+    section {
         background-color: #fff;
         color: #1d1d1d;
         padding: 65px 20px;
     }
-    @media only screen and (max-width: 46.875em){
+
+    @media only screen and (max-width: 46.875em) {
         .section {
             padding: 6.8rem 1.37rem;
         }
     }
-    @media only screen and (max-width: 37.5em){
+
+    @media only screen and (max-width: 37.5em) {
         .section {
             padding: 4.8rem 1.37rem;
         }
     }
 
-    #grow{
+    #grow {
         .heroSection {
             display: flex;
             justify-content: center;
             text-align: center;
             padding: 65px 20px !important;
+
             .heroWrapper {
                 margin: 0 auto;
                 max-width: 75rem;
@@ -30,20 +33,24 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+
                 .heroInfo {
                     max-width: 56rem;
                     width: 100%;
                     flex: 0 1 auto;
-                    > *{
+
+                    >* {
                         width: fit-content;
                         margin-left: auto;
-                        margin-right: auto;    
+                        margin-right: auto;
                     }
-                    @media only screen and (max-width: 37.5em){
+
+                    @media only screen and (max-width: 37.5em) {
                         >* {
                             margin-left: unset;
                         }
                     }
+
                     .hero__heading {
                         font-family: $font_Milik;
                         font-size: 5.5rem;
@@ -52,20 +59,23 @@ body {
                         letter-spacing: -0.03em;
                         margin-bottom: 2rem;
                     }
-                    @media only screen and (max-width: 56.25em){
+
+                    @media only screen and (max-width: 56.25em) {
                         .hero__heading {
-                            font-size: 4.8rem!important;
-                            line-height: 4.95rem!important;
+                            font-size: 4.8rem !important;
+                            line-height: 4.95rem !important;
                         }
                     }
-                    @media only screen and (max-width: 37.5em){
+
+                    @media only screen and (max-width: 37.5em) {
                         .hero__heading {
-                            font-size: 3.43rem!important;
-                            line-height: 3.57rem!important;
+                            font-size: 3.43rem !important;
+                            line-height: 3.57rem !important;
                             margin-bottom: 1.58rem;
                         }
                     }
-                    .hero__sub-heading{
+
+                    .hero__sub-heading {
                         font-family: inherit;
                         color: #000000;
                         max-width: 45rem;
@@ -74,56 +84,64 @@ body {
                         line-height: 1.51rem;
                         margin-bottom: 1.89rem;
                     }
-                    @media only screen and (max-width: 37.5em){
+
+                    @media only screen and (max-width: 37.5em) {
                         .hero__sub-heading {
-                            font-size: 1.23rem!important;
-                            line-height: 1.92rem!important;
+                            font-size: 1.23rem !important;
+                            line-height: 1.92rem !important;
                             margin-bottom: 2.4rem;
-                            max-width: 100%!important;
+                            max-width: 100% !important;
                         }
                     }
                 }
-                @media only screen and (max-width: 46.875em){
+
+                @media only screen and (max-width: 46.875em) {
                     .heroInfo {
                         width: 100%;
                     }
                 }
             }
-            @media only screen and (max-width: 37.5em){
+
+            @media only screen and (max-width: 37.5em) {
                 .heroWrapper {
                     text-align: left;
                 }
             }
         }
-        .growIll{
-            .container{
-                .imageWrapper{
+
+        .growIll {
+            .container {
+                .imageWrapper {
                     height: 100%;
                     width: 100%;
                 }
             }
         }
+
         @media (max-width: 760px) {
-            .growIll{
+            .growIll {
                 padding-bottom: 0 !important;
 
             }
         }
-        @media only screen and (max-width: 46.875em){
+
+        @media only screen and (max-width: 46.875em) {
             .growIll {
                 padding: 6.8rem 1.37rem;
             }
         }
-        @media only screen and (max-width: 37.5em){
+
+        @media only screen and (max-width: 37.5em) {
             .growIll {
                 padding: 4.8rem 1.37rem;
             }
         }
-        .benefitSection{
-            .benefitWrapper{
-                .row{
-                    .feature{
-                        img{
+
+        .benefitSection {
+            .benefitWrapper {
+                .row {
+                    .feature {
+                        img {
                             border-radius: 100%;
                             width: 3.91rem;
                             height: 3.91rem;
@@ -131,14 +149,16 @@ body {
                             object-position: center;
                             overflow: hidden;
                         }
-                        .headline{
+
+                        .headline {
                             color: #050505;
                             font-size: 1.23rem;
                             font-weight: 600;
                             line-height: 1.78rem;
                             margin-bottom: .89rem;
-                        }   
-                        .description{
+                        }
+
+                        .description {
                             font-size: 16px;
                             line-height: 22.4px;
                             font-weight: 400;
@@ -148,32 +168,131 @@ body {
                 }
             }
         }
+
         @media (max-width: 760px) {
-            .benefitSection{
+            .benefitSection {
                 padding-top: 0 !important;
             }
         }
-        .getStartedSection{
-            background-color: #f8fafd;
-            .getStartedWrapper{
-                // .h1{
 
-                // }
-                .p:first-child{
-                    max-width: 40rem;
+        .getStartedSection {
+            background-color: #f8fafd;
+
+            .getStartedWrapper {
+                .row:first-child{
+                    .col-12:first-child {
+                        // .h1{
+    
+                        // }
+                        .p:first-child {
+                            max-width: 40rem;
+                        }
+    
+                        .p:nth-child(3) {
+                            max-width: 27rem;
+                        }
+    
+                        .goalLists {
+                            // position: relative;
+                            list-style-type: none;
+    
+                            .p {
+                                max-width: 27rem;
+                            }
+    
+                            .goalList {
+                                position: relative;
+                            }
+                        }
+    
+                        .goalLists li::before {
+                            content: "";
+                            border-radius: 50%;
+                            background-color: green;
+                            height: .5rem;
+                            width: 1rem;
+                            position: absolute;
+                            left: -1.5rem;
+                            top: .9rem;
+                        }
+    
+                    }
+                    .col-12:nth-child(2){
+                        .demoForm{
+                            background-color: #fff;
+                            background-image: url('../images/grow/bg/noise.png');
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                            border-radius: 1rem;
+                            color: #262c55;
+                            filter: drop-shadow(0 4px 30px rgba(0,0,0,.15));
+                            margin-bottom: 2rem;
+                            padding: 4.8rem 6.3rem 1rem;
+                            height: 60%;
+                            width: 100%;
+                            .formField{
+                                border-bottom: 1px dashed rgba(38,44,85,.7);
+                                margin-bottom: 2rem;
+                                .fieldName{
+                                    font-size: .89rem;
+                                    font-weight: 500;
+                                    line-height: 1.1rem;
+                                    text-transform: uppercase;
+                                    margin-bottom: .5rem;
+                                }
+                                .fieldContent{
+                                    font-size: .89rem;
+                                    font-weight: 500;
+                                    line-height: 1.1rem;
+                                    text-transform: capitalize;
+                                    margin-bottom: .5rem;
+                                    svg{
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                        span{
+                            color: #686868;
+                            display: block;
+                            font-size: .9rem;
+                            font-weight: 500;
+                            line-height: 1rem;
+                            text-align: center;
+                            
+                        }
+                    }
+    
                 }
-                .p:nth-child(3){
-                    max-width: 27rem;
-                } 
-                .goalList::before{
-                    content: "";
-                    border-radius: 50%;
-                    background-color: green;
-                    height: 10px;
-                    width: 10px ;
-                }              
+            }
+            .wrapper{
+                max-width: 50.5rem;
+                margin-top: 5rem;
+                margin-left: 2rem;
+                .h1{
+                    margin-bottom: 2rem;
+                    max-width: inherit;
+                }
+                .p{
+                    margin-bottom: 2rem;
+                    max-width: inherit;
+                }
+            }
+            .container.imgWrapper{
+                filter: drop-shadow(0 4px 30px rgba(0,0,0,.15));
+                margin-top: 2.2rem;
             }
         }
-    
+        .processSection{
+            padding-bottom: 6rem;
+            .container{
+                .wrapper{
+                    margin-bottom: 8rem;
+                    max-width: 50rem;
+                }
+            }
+        }
+
     }
 }
