@@ -458,6 +458,122 @@ body {
                 }
             }
         }
+        .waitListCardSection{
+            .container{
+                background-color: #262c55;
+                color: #fff;
+                margin: 0 auto;
+                max-width: 70.2rem;
+                border-radius: 1rem;
+                box-shadow: 0 25px 50px rgb(29 29 29 / 50%);
+                padding: 2rem;
+                .wrapper{
+                    margin: 3.6rem auto;
+                    max-width: 54.2rem;
+
+                    .h1{
+                        font-family: $font_Milik;
+                        font-size: 3.1rem;
+                        font-weight: 500;
+                        letter-spacing: -.03em;
+                        line-height: 3.4rem;
+                        margin-bottom: 2rem;
+                    }
+                    @media only screen and (max-width: 46.875em){
+                        .h1 {
+                            margin-bottom: 1.8rem;
+                        }
+                    }
+                
+                    @media only screen and (max-width: 37.5em){
+                        .h1 {
+                            font-size: 2.5rem;
+                            line-height: 2.6rem;
+                            margin-bottom: .7rem;
+                        }
+                    }
+                    .p{
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+                        margin-bottom: 3.6rem;
+                        max-width: 50rem;
+                    }
+                    @media only screen and (max-width: 46.875em){
+                        .p {
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            margin-bottom: 3.3rem;
+                        }
+                    }
+                    @media only screen and (max-width: 37.5em){
+                        .p {
+                            font-size: 1.2rem;
+                            line-height: 1.8rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    .ctas{
+                        form{
+                            align-items: stretch;
+                            display: flex;
+                            justify-content: flex-start;
+                            width: 100%;
+                            input[type=email]{
+                                transition: border-color .3s ease,color .3s ease,outline-color .3s ease;
+                                width: 100%;
+                                background-color: hsla(0,0%,100%,.2)!important;
+                                border-color: hsla(0,0%,100%,.2)!important;
+                                border-radius: 0.5rem!important;
+                                color: #fff!important;
+                                flex: 1 1 auto;
+                                font-size: 1rem!important;
+                                letter-spacing: .05rem;
+                                line-height: 1rem!important;
+                                margin-right: .7rem;
+                                padding: 1.4rem 2.7rem!important;
+                                border: 1px solid #c4cdd5;
+                            }
+                            input:focus{
+                                outline: none;
+                            }
+                            input::placeholder{
+                                color: #fff;
+                            }
+                            .btn{
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex: 0 0 auto;
+                            }
+                            @media screen and (max-width: 480px){
+                                .btn {
+                                    font-size: 4.7vw;
+                                    line-height: 3vw;
+                                    padding: 3.5vw 3.3vw;
+                                }
+                            }
+
+                        }
+                        @media only screen and (max-width: 37.5em){
+                            form {
+                                flex-wrap: wrap;
+                                input{
+                                    margin-right: 0;
+                                    padding: 1.4rem .8rem!important;
+                                }
+                                .btn{
+                                    width: 100%;
+                                    padding: 1.3rem 1.7rem;
+                                    margin-top: 1.2rem
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
 
     }
 }

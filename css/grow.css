@@ -806,3 +806,142 @@ body #grow .processSection .container .steps .step:not(:last-child) {
     padding-bottom: 5rem;
   }
 }
+body #grow .waitListCardSection .container {
+  background-color: #262c55;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 70.2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 25px 50px rgba(29, 29, 29, 0.5);
+          box-shadow: 0 25px 50px rgba(29, 29, 29, 0.5);
+  padding: 2rem;
+}
+body #grow .waitListCardSection .container .wrapper {
+  margin: 3.6rem auto;
+  max-width: 54.2rem;
+}
+body #grow .waitListCardSection .container .wrapper .h1 {
+  font-family: Millik, sans-serif;
+  font-size: 3.1rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 3.4rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 46.875em) {
+  body #grow .waitListCardSection .container .wrapper .h1 {
+    margin-bottom: 1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .waitListCardSection .container .wrapper .h1 {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-bottom: 0.7rem;
+  }
+}
+body #grow .waitListCardSection .container .wrapper .p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 3.6rem;
+  max-width: 50rem;
+}
+@media only screen and (max-width: 46.875em) {
+  body #grow .waitListCardSection .container .wrapper .p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 3.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .waitListCardSection .container .wrapper .p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+body #grow .waitListCardSection .container .wrapper .ctas form {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input[type=email] {
+  -webkit-transition: border-color 0.3s ease, color 0.3s ease, outline-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, outline-color 0.3s ease;
+  width: 100%;
+  background-color: hsla(0deg, 0%, 100%, 0.2) !important;
+  border-color: hsla(0deg, 0%, 100%, 0.2) !important;
+  border-radius: 0.5rem !important;
+  color: #fff !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 1rem !important;
+  letter-spacing: 0.05rem;
+  line-height: 1rem !important;
+  margin-right: 0.7rem;
+  padding: 1.4rem 2.7rem !important;
+  border: 1px solid #c4cdd5;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input:focus {
+  outline: none;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input::-webkit-input-placeholder {
+  color: #fff;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input::-moz-placeholder {
+  color: #fff;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input:-ms-input-placeholder {
+  color: #fff;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input::-ms-input-placeholder {
+  color: #fff;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form input::placeholder {
+  color: #fff;
+}
+body #grow .waitListCardSection .container .wrapper .ctas form .btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media screen and (max-width: 480px) {
+  body #grow .waitListCardSection .container .wrapper .ctas form .btn {
+    font-size: 4.7vw;
+    line-height: 3vw;
+    padding: 3.5vw 3.3vw;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #grow .waitListCardSection .container .wrapper .ctas form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body #grow .waitListCardSection .container .wrapper .ctas form input {
+    margin-right: 0;
+    padding: 1.4rem 0.8rem !important;
+  }
+  body #grow .waitListCardSection .container .wrapper .ctas form .btn {
+    width: 100%;
+    padding: 1.3rem 1.7rem;
+    margin-top: 1.2rem;
+  }
+}
