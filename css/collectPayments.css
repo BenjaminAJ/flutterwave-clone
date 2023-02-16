@@ -96,6 +96,10 @@ img {
   display: inline-flex !important;
 }
 
+.btn--inline.white, .btn--inline.white:not([disabled]):hover {
+  color: #fff;
+}
+
 .btn--inline svg {
   --scale: 0.85;
   -webkit-transform: scale(var(--scale));
@@ -411,6 +415,9 @@ body .container-fluid .dropdown:hover .dropdown-content .dropdownItem {
           align-items: center;
 }
 
+body ul {
+  list-style-type: none;
+}
 body section {
   background-color: #fff;
   color: #1d1d1d;
@@ -635,4 +642,275 @@ body #collectPayment .collectPaymentsSection .bg .container .grid .gridSection .
     min-height: unset;
     padding-bottom: 9rem;
   }
+}
+body #collectPayment .collectPaySection {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+body #collectPayment .collectPaySection .container {
+  margin: 0 auto;
+  max-width: 70.2rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperTop {
+  width: 100%;
+  max-width: 42rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperTop .h1 {
+  margin-bottom: 1.8rem;
+  max-width: inherit;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperTop .p {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperTop .btn {
+  font-size: 19px;
+  padding: 18px 20px;
+  border-radius: 8px;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul {
+  margin-top: 5.5rem;
+  max-width: 30rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul li {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul li {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul {
+    max-width: unset;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom ul {
+    margin-top: 6rem;
+  }
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom .media {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  min-width: 30rem;
+  max-width: calc(100% - 42rem);
+  margin-left: 3rem;
+}
+body #collectPayment .collectPaySection .container .wrapper .wrapperBottom .media .imageWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom .media {
+    min-width: 20rem;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom .media {
+    margin: 3rem auto 0 0;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .collectPaySection .container .wrapper .wrapperBottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+body #collectPayment .developerSection {
+  background-color: #f8fafd;
+}
+body #collectPayment .developerSection .container {
+  margin: 0 auto;
+  max-width: 70.2rem;
+}
+body #collectPayment .developerSection .container .wrapper .h1 {
+  max-width: 45rem;
+}
+body #collectPayment .developerSection .container .wrapper .p {
+  margin-bottom: 2rem;
+  max-width: 35rem;
+}
+body #collectPayment .developerSection .container .wrapper .ul li {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  padding-left: 0.4rem;
+  position: relative;
+}
+body #collectPayment .developerSection .container .wrapper .ul li a {
+  color: currentColor;
+  position: relative;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body #collectPayment .developerSection .container .wrapper .ul li:not(:last-of-type) {
+  margin-bottom: 1.4rem;
+}
+body #collectPayment .developerSection .container .wrapper .ul li::before {
+  content: "";
+  border-radius: 50%;
+  background-color: #fb9129;
+  height: 0.5rem;
+  width: 1rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.9rem;
+}
+body #collectPayment .safetySection .container {
+  margin: 0 auto;
+  max-width: 70.2rem;
+}
+body #collectPayment .safetySection .container .h1 {
+  max-width: unset;
+}
+body #collectPayment .safetySection .container .p {
+  max-width: unset;
+  margin-bottom: 3rem;
+}
+body #collectPayment .safetySection .container .grid {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #collectPayment .safetySection .container .grid .gridSection {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 23rem;
+  width: 100%;
+}
+body #collectPayment .safetySection .container .grid .gridSection h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+body #collectPayment .safetySection .container .grid .gridSection .p {
+  font-size: 16px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .safetySection .container .grid .gridSection {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .safetySection .container .grid .gridSection:first-child {
+    margin-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .safetySection .container .grid {
+    margin-top: unset;
+  }
+}
+body #collectPayment .getStartedCardSection .container {
+  background-color: #1d1d1d;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 70.2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 25px 50px rgba(29, 29, 29, 0.5);
+          box-shadow: 0 25px 50px rgba(29, 29, 29, 0.5);
+  padding: 2rem;
+}
+body #collectPayment .getStartedCardSection .container .wrapper {
+  margin: 3.6rem auto;
+  max-width: 54.2rem;
+}
+body #collectPayment .getStartedCardSection .container .wrapper .h1 {
+  font-family: Millik, sans-serif;
+  font-size: 3.1rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 3.4rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .getStartedCardSection .container .wrapper .h1 {
+    margin-bottom: 1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #collectPayment .getStartedCardSection .container .wrapper .h1 {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-bottom: 0.7rem;
+  }
+}
+body #collectPayment .getStartedCardSection .container .wrapper .p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 3.6rem;
+  max-width: 50rem;
+}
+@media only screen and (max-width: 46.875em) {
+  body #collectPayment .getStartedCardSection .container .wrapper .p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 3.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  body #collectPayment .getStartedCardSection .container .wrapper .p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+body #collectPayment .getStartedCardSection .container .wrapper .ctas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -15px;
+}
+body #collectPayment .getStartedCardSection .container .wrapper .ctas .cta {
+  margin-top: 15px;
+}
+body #collectPayment .getStartedCardSection .container .wrapper .ctas .cta .btn {
+  font-size: 19px;
+  padding: 18px 20px;
+  border-radius: 8px;
+}
+body #collectPayment .getStartedCardSection .container .wrapper .ctas .cta:not(:last-child) {
+  margin-right: 3rem;
 }

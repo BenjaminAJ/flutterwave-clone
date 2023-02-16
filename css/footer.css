@@ -1,0 +1,56 @@
+.footer-container{
+    /* background-color: aqua ; */
+    padding: 5rem 3rem 0;
+}
+
+.footer-container p{
+    color: white;
+}
+
+.footer{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    /* margin-bottom: 2rem; */
+    font-size: 18px;
+    line-height: 1rem;
+    padding: 0.2rem;
+
+    align-items: center;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.footer-heading a{
+    color: black;
+    margin-bottom: 24px;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: .9rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    transition: color .3s ease;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.footer-heading a:hover{
+    /* the colour when you mou is on it */
+    color: #35a162;
+}
