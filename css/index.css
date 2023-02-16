@@ -549,11 +549,13 @@ body .customerSection {
 body .customerSection .imgWrapper {
   margin-right: 0;
 }
-body .customerSection .imgWrapper .leftImg img {
-  height: 42rem !important;
-  width: auto;
-  -o-object-position: bottom right;
-     object-position: bottom right;
+@media (min-width: 1060px) {
+  body .customerSection .imgWrapper .leftImg img {
+    height: 42rem !important;
+    width: auto;
+    -o-object-position: bottom right;
+       object-position: bottom right;
+  }
 }
 @media (max-width: 46.875em) {
   body .customerSection .rightImg .row {
@@ -582,11 +584,13 @@ body .customerSection .rightImg .row p {
   font-weight: 300;
   max-width: 25rem;
 }
-body .customerSection .rightImg .row .imgContainer {
-  height: 42rem !important;
-}
-body .customerSection .rightImg .row .imgContainer img {
-  height: 100% !important;
+@media (min-width: 1060px) {
+  body .customerSection .rightImg .row .imgContainer {
+    height: 42rem !important;
+  }
+  body .customerSection .rightImg .row .imgContainer img {
+    height: 100% !important;
+  }
 }
 @media (min-width: 1060px) {
   body .customerSection .rightImg {
@@ -1042,4 +1046,99 @@ body .customerSection .rightImg .row .imgContainer img {
   position: absolute;
   left: -1.5rem;
   top: 0.9rem;
+}
+#home .statSection .container {
+  margin: 0 auto;
+  max-width: 70.2rem;
+}
+#home .statSection .container .grid {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#home .statSection .container .grid .gridSection {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 50%;
+}
+#home .statSection .container .grid .gridSection .stats {
+  position: relative;
+}
+#home .statSection .container .grid .gridSection .stats .stat:not(:last-child) {
+  margin-bottom: 4.2rem;
+}
+#home .statSection .container .grid .gridSection .stats .stat {
+  padding-left: 1.7rem;
+}
+#home .statSection .container .grid .gridSection .stats .stat .statHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+#home .statSection .container .grid .gridSection .stats .stat .statHeading:before {
+  border: 1px solid #000;
+  content: "";
+  height: 1.5rem;
+  left: -1.7rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 0.1rem;
+}
+#home .statSection .container .grid .gridSection .stats .stat .statInfo {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+#home .statSection .container .grid .gridSection .stats .stat .statList {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  max-width: 25rem;
+}
+#home .statSection .container .grid .gridSection .stats .stat .statList li {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-bottom: 0.8rem;
+  width: calc(50% - 2rem);
+}
+#home .statSection .container .grid .gridSection .stats:before {
+  background-image: url("../images/dots.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0.5rem;
+  width: 0.1rem;
+}
+@media only screen and (max-width: 46.875em) {
+  #home .statSection .container .grid .gridSection {
+    width: 100%;
+  }
 }
