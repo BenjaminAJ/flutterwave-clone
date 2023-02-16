@@ -3,7 +3,7 @@ $register-account-hover: #cc7c00;
 $navbar-hover: #00abab;
 $inlinegreen: #35a162;
 $font_Milik: Millik, sans-serif;
-$link:#00abab;
+$link: #00abab;
 
 * {
     margin: 0;
@@ -12,36 +12,49 @@ $link:#00abab;
     font-family: inherit;
     font-size: inherit;
 }
-.link{
+
+.link {
     color: $link;
     display: inline-block;
     font-weight: 400;
     padding: 0 0.2rem;
     text-decoration: none;
 }
+
 .c-pp {
     color: #6672c7;
 }
+
 .c-or {
     color: #fb9129;
 }
+
 .c-gr {
     color: $inlinegreen;
 }
+
 img {
     object-fit: cover;
 }
+
 .btn:focus {
     box-shadow: none
 }
+
 .btn--secondary {
     background-color: #fff;
     color: #1d1d1d;
 }
+
 .btn--primary {
     background-color: #0a0e27;
     color: #fff;
 
+}
+
+.btn--tertiary {
+    background-color: #eee;
+    color: #000;
 }
 
 .btn--sm {
@@ -67,6 +80,7 @@ img {
         padding: 1.51rem 1.92rem;
     }
 }
+
 .btn--inline.orange,
 .btn--inline.orange:not([disabled]):hover {
     color: #fb4e20;
@@ -112,7 +126,8 @@ img {
             border-radius: 1rem !important;
             outline: none !important;
         }
-        @media screen and (max-width: 480px){
+
+        @media screen and (max-width: 480px) {
             .btn {
                 font-size: 3.7vw;
                 line-height: 4vw;
@@ -178,6 +193,7 @@ img {
         line-height: 1.92rem;
     }
 }
+
 .h1 {
     font-family: Millik, sans-serif;
     font-size: 5rem;
@@ -188,6 +204,7 @@ img {
     max-width: 40rem;
 
 }
+
 @media only screen and (max-width: 768px) {
     .h1 {
         font-size: 3.4375rem;
@@ -200,5 +217,11 @@ img {
     .h1 {
         font-size: 2.475rem;
         line-height: 3.025rem;
+    }
+}
+
+@keyframes slide {
+    to {
+        transform: translateY(0)
     }
 }

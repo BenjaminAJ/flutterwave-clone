@@ -52,6 +52,11 @@ img {
   color: #fff;
 }
 
+.btn--tertiary {
+  background-color: #eee;
+  color: #000;
+}
+
 .btn--sm {
   font-size: 0.96rem;
   line-height: 1.375rem;
@@ -212,6 +217,18 @@ img {
   .h1 {
     font-size: 2.475rem;
     line-height: 3.025rem;
+  }
+}
+@-webkit-keyframes slide {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @font-face {

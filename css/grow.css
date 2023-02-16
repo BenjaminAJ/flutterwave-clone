@@ -49,6 +49,11 @@ img {
   color: #fff;
 }
 
+.btn--tertiary {
+  background-color: #eee;
+  color: #000;
+}
+
 .btn--sm {
   font-size: 0.96rem;
   line-height: 1.375rem;
@@ -209,6 +214,18 @@ img {
   .h1 {
     font-size: 2.475rem;
     line-height: 3.025rem;
+  }
+}
+@-webkit-keyframes slide {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @font-face {
@@ -610,6 +627,8 @@ body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-ch
 }
 body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) .demoForm .formField .fieldContent svg {
   vertical-align: middle;
+  -webkit-transition: 2.2s ease-in-out 0.5s;
+  transition: 2.2s ease-in-out 0.5s;
 }
 body #grow .getStartedSection .getStartedWrapper .row:first-child .col-12:nth-child(2) span {
   color: #686868;
