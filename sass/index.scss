@@ -14,11 +14,13 @@
 main {
     min-height: 50rem;
 }
-
-#home {
-    overflow-x: hidden;
+ul{
+    list-style-type: none;
 }
 
+#home{
+    overflow-x: hidden;
+}
 body {
     color: #000;
     font-family: "Moderat", sans-serif;
@@ -59,17 +61,18 @@ body {
             line-height: 3.025rem;
         }
     }
+
     .p {
         font-size: 1.375rem;
         font-weight: 300;
         line-height: 2rem;
         max-width: 38rem;
     }
-    
+
     .p:not(:last-child) {
         margin-bottom: 1.37rem;
     }
-    
+
     @media only screen and (max-width: 37.5em) {
         .p {
             font-size: 1.23rem;
@@ -105,16 +108,18 @@ body {
                     margin: 0px 0px 30px;
 
                 }
-                @media only screen and (max-width: 56.25em){
+
+                @media only screen and (max-width: 56.25em) {
                     .hero__heading {
-                        font-size: 4.81rem!important;
-                        line-height: 4.95rem!important;
+                        font-size: 4.81rem !important;
+                        line-height: 4.95rem !important;
                     }
                 }
-                @media only screen and (max-width: 37.5em){
+
+                @media only screen and (max-width: 37.5em) {
                     .hero__heading {
-                        font-size: 3.43rem!important;
-                        line-height: 3.57rem!important;
+                        font-size: 3.43rem !important;
+                        line-height: 3.57rem !important;
                         margin-bottom: 1.58rem;
                     }
                 }
@@ -239,22 +244,26 @@ body {
                 width: auto;
             }
         }
-        @media only screen and (max-width: 46.875em){
+
+        @media only screen and (max-width: 46.875em) {
             .business {
                 padding: 1.3rem 1.5rem;
             }
         }
-        @media only screen and (max-width: 37.5em){
+
+        @media only screen and (max-width: 37.5em) {
             .business {
                 padding: 1.1rem 1rem;
             }
         }
-        @media only screen and (max-width: 46.875em){
-        .business img  {
+
+        @media only screen and (max-width: 46.875em) {
+            .business img {
                 height: 1.7rem;
             }
         }
-        @media only screen and (max-width: 37.5em){
+
+        @media only screen and (max-width: 37.5em) {
             .business img {
                 height: 1.21rem;
             }
@@ -497,18 +506,21 @@ body {
                 margin-bottom: 2.68rem;
             }
         }
-        .btn{
+
+        .btn {
             margin-bottom: 4.46rem;
         }
+
         .cardAnimation {
             --width: 34rem;
             --height: 21rem;
-            width:34rem;
+            width: 34rem;
             height: 21rem;
             color: #fff;
             position: relative;
             margin-bottom: 14rem;
-            .card{
+
+            .card {
                 position: absolute;
                 max-width: 34rem;
                 max-height: 21rem;
@@ -517,29 +529,34 @@ body {
                 display: flex;
                 flex-direction: column;
                 border-radius: 16px;
-                background: linear-gradient(200deg,hsla(0,0%,100%,.2),hsla(0,0%,100%,0));
-                .card__top{
-                 svg {
-                    float: right;
-                    margin-right: 5px;
-                    margin-top: 12px;
+                background: linear-gradient(200deg, hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, 0));
+
+                .card__top {
+                    svg {
+                        float: right;
+                        margin-right: 5px;
+                        margin-top: 12px;
+                    }
                 }
-            }
+
                 .card__bottom {
                     margin-top: auto;
                     text-align: left;
                     width: 100%;
+
                     .card__number {
                         font-family: "IBMPlex-Mono";
                         font-weight: 400;
                         margin-bottom: 18px;
                     }
+
                     .card__name-wrap {
                         display: flex;
                         justify-content: space-between;
                     }
                 }
             }
+
             .card:before {
                 position: absolute;
                 content: "";
@@ -553,25 +570,29 @@ body {
                 height: 100%;
                 opacity: .6;
             }
-            .card:first-child{
+
+            .card:first-child {
                 transform: translateY(10px);
                 perspective: 2000px;
                 scale: 1;
                 z-index: 1;
             }
-            .card:nth-child(2){
+
+            .card:nth-child(2) {
                 transform: translateY(20px);
                 perspective: 2000px;
                 scale: .9;
                 z-index: 2;
             }
-            .card:nth-child(3){
+
+            .card:nth-child(3) {
                 transform: translateY(30px);
                 perspective: 2000px;
                 scale: .7;
                 z-index: 3;
             }
-            .card:last-child{
+
+            .card:last-child {
                 transform: translateY(40px);
                 perspective: 2000px;
                 scale: .5;
@@ -581,5 +602,139 @@ body {
 
     }
 }
+#home {
+    .getStartedCardSection {
+        .container {
+            background-color: #1d1d1d;
+            color: #fff;
+            margin: 0 auto;
+            max-width: 70.2rem;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px rgb(29 29 29 / 50%);
+            padding: 2rem;
 
+            .wrapper {
+                margin: 3.6rem auto;
+                max-width: 54.2rem;
 
+                .h1 {
+                    font-family: $font_Milik;
+                    font-size: 3.1rem;
+                    font-weight: 500;
+                    letter-spacing: -.03em;
+                    line-height: 3.4rem;
+                    margin-bottom: 2rem;
+                }
+
+                @media only screen and (max-width: 46.875em) {
+                    .h1 {
+                        margin-bottom: 1.8rem;
+                    }
+                }
+
+                @media only screen and (max-width: 37.5em) {
+                    .h1 {
+                        font-size: 2.5rem;
+                        line-height: 2.6rem;
+                        margin-bottom: .7rem;
+                    }
+                }
+
+                .p {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 3.6rem;
+                    max-width: 50rem;
+                }
+
+                @media only screen and (max-width: 46.875em) {
+                    .p {
+                        font-size: 1rem;
+                        line-height: 2rem;
+                        margin-bottom: 3.3rem;
+                    }
+                }
+
+                @media only screen and (max-width: 37.5em) {
+                    .p {
+                        font-size: 1.2rem;
+                        line-height: 1.8rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .ctas {
+                    align-items: center;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    margin-bottom: -15px;
+
+                    .cta {
+                        margin-top: 15px;
+
+                        .btn {
+                            font-size: 19px;
+                            padding: 18px 20px;
+                            border-radius: 8px;
+
+                        }
+                    }
+
+                    .cta:not(:last-child) {
+                        margin-right: 3rem;
+                    }
+                }
+
+            }
+        }
+    }
+    .docSection{
+        background-color: #f8fafd;
+        color: #1d1d1d;
+        .container{
+            margin: 0 auto;
+            max-width: 70.2rem;    
+            .h1{
+                margin-bottom: 2rem;
+                max-width: 64.2rem;
+            }
+            .p{
+                margin-bottom: 2rem;
+                max-width: 40rem;
+            }
+            .ul{
+                margin-bottom: 3rem;
+                li{
+                    position: relative;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    line-height: 1.6rem;
+                    padding-left: .4rem;
+                    position: relative;
+                    a{
+                        color: currentColor;
+                        position: relative;
+                        text-decoration: none;
+                        transition: all .3s ease;
+                    }
+                }
+                li:not(:last-of-type) {
+                    margin-bottom: 1.4rem;
+                }
+            }
+            .ul li::before {
+                content: "";
+                border-radius: 50%;
+                background-color: #262c55;
+                height: .5rem;
+                width: 1rem;
+                position: absolute;
+                left: -1.5rem;
+                top: .9rem;
+            }
+
+        }
+    }
+
+}

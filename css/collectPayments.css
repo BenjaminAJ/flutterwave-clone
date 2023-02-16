@@ -29,6 +29,10 @@
   color: #35a162;
 }
 
+.c-pk-darker {
+  color: #eb7da7;
+}
+
 img {
   -o-object-fit: cover;
      object-fit: cover;
