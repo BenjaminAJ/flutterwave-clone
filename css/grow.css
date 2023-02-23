@@ -526,24 +526,16 @@ body #grow .heroSection .heroWrapper .heroInfo .hero__sub-heading {
     text-align: left;
   }
 }
+body #grow .growIll {
+  padding: 65px 20px;
+}
 body #grow .growIll .container .imageWrapper {
   height: 100%;
   width: 100%;
 }
-@media (max-width: 760px) {
-  body #grow .growIll {
-    padding-bottom: 0 !important;
-  }
-}
-@media only screen and (max-width: 46.875em) {
-  body #grow .growIll {
-    padding: 6.8rem 1.37rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  body #grow .growIll {
-    padding: 4.8rem 1.37rem;
-  }
+body #grow .growIll .container .imageWrapper img {
+  height: 100%;
+  width: 100%;
 }
 body #grow .benefitSection .benefitWrapper .row .feature img {
   border-radius: 100%;

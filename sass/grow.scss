@@ -110,32 +110,37 @@ body {
         }
 
         .growIll {
+            padding: 65px 20px;
             .container {
                 .imageWrapper {
                     height: 100%;
                     width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
             }
         }
 
-        @media (max-width: 760px) {
-            .growIll {
-                padding-bottom: 0 !important;
+        // @media (max-width: 760px) {
+        //     .growIll {
+        //         padding-bottom: 0 !important;
 
-            }
-        }
+        //     }
+        // }
 
-        @media only screen and (max-width: 46.875em) {
-            .growIll {
-                padding: 6.8rem 1.37rem;
-            }
-        }
+        // @media only screen and (max-width: 46.875em) {
+        //     .growIll {
+        //         padding: 6.8rem 1.37rem;
+        //     }
+        // }
 
-        @media only screen and (max-width: 37.5em) {
-            .growIll {
-                padding: 4.8rem 1.37rem;
-            }
-        }
+        // @media only screen and (max-width: 37.5em) {
+        //     .growIll {
+        //         padding: 4.8rem 1.37rem;
+        //     }
+        // }
 
         .benefitSection {
             .benefitWrapper {
